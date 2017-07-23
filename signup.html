@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" type="image/png" href="./images/samz.png">
+<title>Signup</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/project.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<ul>
+  <li>
+    <div id="mySidenav" class="sidenav"> 
+         <h4><font size="5"><img src="./images/samz.png" width="80" height="80" align="center"/><u>Samzworld</u></font></h4>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="about.html">About us</a>
+<a href="Services.html">Services</a> 
+<a href="contact_us.html">Contact us</a>
+<br/><br/><br/><br/>
+<h4> <font size="2">&copy; Copyright 2017. All Rights Reserved | Privacy Policy Terms of Use</font></h4>
+</div>  
+<span style="font-size:50px; padding-left: 10px;
+cursor: pointer"onclick="openNav()"><input type="image" src="./images/Drawer.png" width="40" height="40" align="center" /></span>
+</li>
+  <li><a href="slide.html" >Home</a></li>
+  <li><a href="product.html">All Models</a></li>
+  <li><a href="contact.html">Contact us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Know us</a>
+    <div class="dropdown-content">
+      <a href="about.html">About us</a>
+      <a href="signup.html">Signup</a>
+      <a href="login.html" >Login</a>
+    </div>
+    </li> 
+    <li><div class="one"><input type="text" name="search" placeholder="&#9764 Search.."></div></li>
+  </ul>
+
+ <h3><img src="./images/samz.png" width="80" height="80" align="center"/><font size="5"><u>Samzworld</u></font></h3>
+<div id="content" >
+ <p align="center" class="one"><img src="./images/Sign.png" class="align-center medium" width="150" height="150" /></p>
+ <h3 align="center"><font size="8">SIGNUP</font></h3>
+
+
+ <form class="modal-content animate" action="action_page.php">
+<div class="container"> 
+<h3><font size="6">Please fill the form:</font></h3>
+ <fieldset>
+<legend><h4>YOUR DETAILS</h4></legend>
+<font size="4">
+<label for="Name">Name:</label>
+<input type="text" name="Name" required="required" />
+<br /><br />
+<label for="Mobile">Mobile:</label>
+<input type="text" name="mobile" required="required" />
+<br /><br />
+<label for="Email">Email:</label>
+<input type="text" name="Email" required="required" />
+<br /><br />
+</font>
+<hr />
+
+<label for="Maritial Status">
+<b>whats is your maritial status:</b>
+</label>
+<select name="Maritial Status" id="Maritial Status">
+<option value="Married">Married</option>
+<option value="Unmarried">Unmarried</option>
+<option value="Divorced">Divorced</option>
+</select>
+<hr />
+
+<b>Religion:</b>
+<br />
+<label>
+
+</label>
+<label>
+<input type="radio" name="Muslim" value="Muslim" />
+Muslim
+</label>
+<label>
+<input type="radio" name="Christian" value="christian" />
+christian
+</label>
+<label>
+<input type="radio" name="Buddhist" value="Buddhist" />
+Buddhist
+</label>
+<label>
+<input type="radio" name="others" value="others" />
+others
+</label>
+
+<hr />
+<b>Gender:</b>
+<br />
+<input type="radio" name="Gender" value="Male" /> Male
+<input type="radio" name="Gender" value="Female" />
+Female
+<input type="radio" name="Gender" value="Others" />
+Others
+
+<hr />
+
+<label for="comments">
+Write something about yourself:
+</label>
+<br />
+<textarea rows="4" cols="40" id="Write something about yourself ">
+</textarea>
+<hr />
+<label for="username">Username:</label>
+<input type="text" name="username"
+required="required" />
+<br /><br />
+<label for="password">Password:</label>
+<input type="password" name="password"
+required="required" />
+<br /><br />
+<label>
+<input type="checkbox" name="subscribe" checked="checked" />Sign me up for email updates
+</label>
+<button type="button"><b>Signup</b></button>
+<button type="reset" value="reset"><b>Clear</b></button>
+</fieldset>
+
+
+</div>
+</form>
+</div>
+    
+<hr />
+<marquee><b>&copy; Copyright 2017. All Rights Reserved | Privacy Policy Terms of Use.........website created by &lt team one &gt</b></marquee>
+<hr />
+  
+<div class="relative">
+<ul>
+ <h3><font size="6">&#9881;QUICK LINKS</font></h3>
+<li><a href="slide.html" target="_blank">Home</a></li>
+<li><a href="product.html">All Models</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="about.html" >About us</a></li>
+ </ul>
+<h2>Subscribe to our newsletter</h2>
+<p>Enter your email id here....</p>
+<div class="one"><input type="text" name="search" placeholder="&#9764 Enter your Email...">
+<button type="submit" name="subscribe" value="Subscribe" />Subscribe</button></div>
+<h2><u> CONTACT US</u></h2>
+<p> Mail us on <a href="www.example@gmail.com" target="_blank">example@gmail.com</a> or call us on 1800-100-1240</p>
+<p><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a></p>
+<p> &copy; Copyright 2017. All Rights Reserved | Privacy Policy Terms of Use</p>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); 
+}
+    function openNav() { 
+document.getElementById("mySidenav") .style.width="250px";
+} 
+function closeNav() { 
+document.getElementById("mySidenav") .style.width = "0";
+}    
+
+</script>
+</body>
+</html>

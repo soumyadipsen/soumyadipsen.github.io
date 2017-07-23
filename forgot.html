@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <link rel="icon" type="image/gif/png" href="./images/samz.png">
+<title>Forgot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="./css/project.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+ <body>
+<ul>
+  <li>
+    <div id="mySidenav" class="sidenav"> 
+         <h4><font size="5"><img src="./images/samz.png" width="80" height="80" align="center"/><u>Samzworld</u></font></h4>
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a href="about.html">About us</a>
+<a href="contact.html">Contact us</a>
+
+        <br/><br/><br/><br/>
+<h4> <font size="2">&copy; Copyright 2017. All Rights Reserved | Privacy Policy Terms of Use</font></h4>
+</div>  
+<span style="font-size:50px; padding-left: 10px;
+cursor: pointer"onclick="openNav()"><input type="image" src="./images/Drawer.png" width="40" height="40" align="center" /></span>
+</li>
+  <li><a href="slide.html">Home</a></li>
+  <li><a href="product.html">All Models</a
+  <li><a href="contact.html">Contact us</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Know us</a>
+    <div class="dropdown-content">
+      <a href="about.html">About us</a>
+      <a href="signup.html">Signup</a>
+      <a href="login.html">Login</a>
+    </div>
+    </li> 
+    <li><form class="one"><input type="text" name="search" placeholder="&#9764 Search.."></form></li>
+  </ul>
+
+<hr />
+<div id="content" align="center" class="image">
+<img src="./images/f1.png" class="align-center medium" width="300" height="350" />
+<h1><font size="8">FORGOT PASSWORD</font></h1>
+<form class="modal-content animate">
+<div class="container"> 
+<h2><u> ENTER YOU EMAIL ID HERE:</u></h2>
+We will send a OTP in your registered email id..
+<input type="text"  placeholder= "Enter your registered email id..." name="email" required />
+<button class="button" onclick="ss()">Send</button>
+
+</div>
+</form>
+<br /><br /><br />
+ </div>    
+     <hr />
+ 
+ <hr />
+<marquee><b>&copy; Copyright 2017. All Rights Reserved | Privacy Policy Terms of Use.........website created by &lt team one &gt</b></marquee>
+
+<hr />
+
+ <div class="relative">
+<ul>
+ <h3><font size="6">&#9881;QUICK LINKS</font></h3>
+<li><a href="slide.html" target="_blank">Home</a></li>
+<li><a href="product.html">All Models</a></li>
+<li><a href="contact.html">Contact us</a></li>
+<li><a href="about.html" >About us</a></li>
+ </ul>
+<h2>Subscribe to our newsletter</h2>
+<p>Enter your email id here....</p>
+<div class="one"><input type="text" name="search" placeholder="&#9764 Enter your Email...">
+<button type="submit" name="subscribe" value="Subscribe" />Subscribe</button></div>
+<h2><u> CONTACT US</u></h2>
+<p> Mail us on <a href="www.example@gmail.com" target="_blank">example@gmail.com</a> or call us on 1800-100-1240</p>
+<p><a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a></p>
+<p> &copy; Copyright 2017. All Rights Reserved | Privacy Policy Terms of Use</p>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); 
+}
+    function openNav() { 
+document.getElementById("mySidenav") .style.width="250px";
+} 
+function closeNav() { 
+document.getElementById("mySidenav") .style.width = "0";
+} 
+
+function ss()
+{
+  alert("OTP has been sent to your registered email id");
+}
+</script>
+    </body> 
+</html>
